@@ -1,4 +1,4 @@
-![SWOT](https://user-images.githubusercontent.com/80749311/114695253-09ea9f80-9d39-11eb-9efe-82be11b6163c.png)
+
 Requirements
 ===
 
@@ -21,3 +21,5 @@ Cost / Features
 |Messenger website cost depend on the features like how many texts can be sent at one time or how many different clients can be connected or the amount of pictures and videos that can be sent|    |$140-$180|
 |Domain name cost|Your domain name costing will be an annual cost. The price is totally depended on where you purchase it form and the extension you get like .com or .shop,etc| $2-$20/year|
 |Messanger hosting|Once you have register a damain name. now you have find a web host| $80-%500/month| 
+
+![SWOT](https://user-images.githubusercontent.com/80749311/114695253-09ea9f80-9d39-11eb-9efe-82be11b6163c.png)
