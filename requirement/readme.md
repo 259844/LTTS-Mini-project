@@ -1,3 +1,4 @@
+![SWOT](https://user-images.githubusercontent.com/80749311/114695253-09ea9f80-9d39-11eb-9efe-82be11b6163c.png)
 Requirements
 ===
 
