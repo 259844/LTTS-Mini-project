@@ -26,3 +26,21 @@ SWOT ANALYSIS
 ===
 
 ![SWOT](https://user-images.githubusercontent.com/80749311/114695253-09ea9f80-9d39-11eb-9efe-82be11b6163c.png)
+
+4 W's and 1 H
+===
+
+**Who:**
+Students, common people, company employees or anyone who wants to have a chat through a particular server can benifit from this application
+
+**What:**
+Can be used for private chat over LAN and over Internet,Can be used for broadcasting notices in an organization, Can be further developed for file transfer,Basically this application can be for communication purpose anywhere. *For over the internet connection a dedicated server with global IP will be required.
+
+**When:**
+for private chat over LAN and over Internet  or when a secure and reliabe network of communication is needed between the clients  
+
+**Where:**
+the application can be used in private offices or a college group or anywhere a reliable network communication for a Client-Server chat application is needed
+
+**How:**
+A chat application is created based on Transmission Control Protocol (TCP) where TCP is connection oriented protocol and in the end, multithreading is used to develop the application.A client-server chat application consists of a Chat Client and a Chat Server and there exists a two way communication between them. Here, Message Processor is used to interpret message from the user, Message Interpreter is used to extract and pass the received message. Message Maker is used to construct back the message and Client Manager is used to maintain the clients list which the sender and receiver at both sides use to interact with each other.
