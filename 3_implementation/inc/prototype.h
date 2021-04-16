@@ -9,7 +9,6 @@
  * 
  */
 
-***************** Client's side ********************
 
  #include<stdio.h>
  #include<string.h>
