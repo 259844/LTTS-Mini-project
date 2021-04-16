@@ -17,39 +17,35 @@
 #define RESET "\033[0m"
 
 void
-trim_newline (char *text)
+trim_newline (char *text);
   
-  /**include
-  d
-  
-  */
   
   
   
  
  void
-get_username (char *username)
+get_username (char *username);
   
   
  void
-set_username (connection_info * connection)
+set_username (connection_info * connection);
 
   
  void
-stop_client (connection_info * connection)
+stop_client (connection_info * connection);
   
   
  void
-connect_to_server (connection_info * connection, char *address, char *port)
+connect_to_server (connection_info * connection, char *address, char *port);
+ 
+  
+ void
+handle_user_input (connection_info * connection);
+  
   
   
  void
-handle_user_input (connection_info * connection)
-  
-  
-  
- void
-handle_server_message (connection_info * connection)
+handle_server_message (connection_info * connection);
   
   
   
