@@ -8,19 +8,19 @@ char confirm;
 void check(void)
   
   void
-test get_username ()
+test_get_username ()
 {
-  TEST_ASSERT_EQUAL(-1, 20);
+  TEST_ASSERT_EQUAL(-1, strlen (username)==20);
 }
 void
-test set_username ()
+test_set_username ()
 {
-   TEST_ASSERT_EQUAL(-1, -2);
+   TEST_ASSERT_EQUAL(-1, send (connection->socket, (void *) &msg, sizeof (msg), 0)==-2);
 }
   int
-test main()
+test_main()
   {
-    TEST_ASSERT_EQUAL(-1, 3);
+    TEST_ASSERT_EQUAL(-1,argc== 3);
   }
   int test_main(void)
 {
