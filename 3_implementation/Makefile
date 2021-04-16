@@ -1,6 +1,9 @@
 PROJ_NAME = chat_app
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
+SRC = src/server.c\
+      src/client.c
+
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
    RM = del /q
