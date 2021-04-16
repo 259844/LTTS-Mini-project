@@ -19,6 +19,13 @@
 void
 trim_newline (char *text)
   
+  /**
+  
+  
+  */
+  
+  
+  
  
  void
 get_username (char *username)
