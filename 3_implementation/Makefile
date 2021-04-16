@@ -1,3 +1,5 @@
+PROJ_NAME = chat_app
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 .PHONY: default
 default: help
