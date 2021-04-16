@@ -1,8 +1,11 @@
 # LTTS-Mini-project
 
+![logo](https://user-images.githubusercontent.com/80749311/114971472-ff93e700-9e99-11eb-9e6a-3266abf84db2.png)
+
 Build | Code Quality | Unity | Git Inspector
 |---------|------------|-----------|----------------
-[
+
+
 
 
 ## Folder Structure
