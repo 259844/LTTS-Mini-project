@@ -25,3 +25,8 @@ help:
 	@echo "* all:    Build the server and client"
 	@echo "* clean:  Remove project binaries"
 	@echo ""
+
+cppcheck:
+	cppcheck --enable=all $(SRC) main(client).c
+	cppcheck --enable=all $(SRC) main(server).c
+	
