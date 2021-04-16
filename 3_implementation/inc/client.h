@@ -19,8 +19,8 @@
 void
 trim_newline (char *text)
   
-  /**
-  
+  /**include
+  d
   
   */
   
