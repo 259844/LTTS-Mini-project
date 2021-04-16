@@ -18,7 +18,7 @@ clean:
 	@echo "* Done"
 
 help:
-	@echo "Alpha-Chat: A chat ecosystem built purely in C"
+	@echo "Chat app: A chat ecosystem built purely in C"
 	@echo ""
 	@echo "* server: Build the server"
 	@echo "* client: Build the client"
