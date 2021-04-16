@@ -32,10 +32,20 @@ server:
 	@echo "* Building Server"
 	@gcc server.c -o server
 
+coverage:${PROJECT_NAME}
+	
+	gcov -a main(server).c
+	gcov -a main(client).c
+	
+doc:
+	make -C doc
+$(BUILD_DIR):
+	mkcom $(BUILD_DIR)
+	
 clean:
 	@rm  client server 1>/dev/null 2>&1
 	@echo "* Done"
-
+       $(RM) *.c.gcov
 help:
 	@echo "chat app: A chat ecosystem built purely in C"
 	@echo ""
