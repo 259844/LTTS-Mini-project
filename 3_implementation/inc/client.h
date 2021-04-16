@@ -19,29 +19,29 @@
 void
 trim_newline (char *text)
   
-  
-  void
+ 
+ void
 get_username (char *username)
   
   
-  void
+ void
 set_username (connection_info * connection)
 
   
-  void
+ void
 stop_client (connection_info * connection)
   
   
-  void
+ void
 connect_to_server (connection_info * connection, char *address, char *port)
   
   
-  void
+ void
 handle_user_input (connection_info * connection)
   
   
   
-  void
+ void
 handle_server_message (connection_info * connection)
   
   
