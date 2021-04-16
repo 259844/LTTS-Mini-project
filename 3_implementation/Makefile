@@ -3,6 +3,9 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 SRC = src/server.c\
       src/client.c
+      
+INC	= -Iinc\
+-Iunity\
 
 #To check if the OS is Windows or Linux and set the executable file extension and delete command accordingly
 ifdef OS
@@ -21,41 +24,30 @@ endif
 .PHONY: default
 default: help
 
-all: client server
-	@echo "* Done"
+all:
+gcc src/server.c $(SRC) $(INC) -o $(call FixPath,$(PROJECT_NAME).$(EXEC)) \
+gcc src/client.c $(SRC) $(INC) -o $(call FixPath,$(PROJECT_NAME).$(EXEC))
 
-client:
-	@echo "* Building Client"
-	@gcc client.c -o client
 
-server:
-	@echo "* Building Server"
-	@gcc server.c -o server
 
-coverage:${PROJECT_NAME}
-	
-	gcov -a main(server).c
-	gcov -a main(client).c
-	
+# Call `make run` to run the application
+run:$(PROJECT_NAME)
+	./$(PROJECT_NAME).$(EXEC)
+
+# Document the code using Doxygen
 doc:
-	make -C doc
-$(BUILD_DIR):
-	mkcom $(BUILD_DIR)
-	
-clean:
-	@rm  client server 1>/dev/null 2>&1
-	@echo "* Done"
-       $(RM) *.c.gcov
-help:
-	@echo "chat app: A chat ecosystem built purely in C"
-	@echo ""
-	@echo "* server: Build the server"
-	@echo "* client: Build the client"
-	@echo "* all:    Build the server and client"
-	@echo "* clean:  Remove project binaries"
-	@echo ""
+	make -C ./documentation
 
-cppcheck:
-	cppcheck --enable=all $(SRC) main(client).c
-	cppcheck --enable=all $(SRC) main(server).c
+# Build and run the unit tests
+test:$(SRC) $(TEST_SRC)
+	gcc $(TEST_SRC) $(SRC) $(INC) -o $(TEST_PROJECT_NAME).$(EXEC)
+	./$(TEST_PROJECT_NAME).$(EXEC)
+
+# Remove all the built files, invoke by `make clean`
+clean:
+	$(RM) *.$(EXEC)
 	
+
+#For Linux Only
+valgrind:
+		./$(PROJECT_NAME).out < input_redirect.txt
